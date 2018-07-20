@@ -33,7 +33,6 @@
     "ytdl-core": "^0.20.3",
     "math-expression-evaluator": "^1.2.17",
     "common-tags": "^1.8.0",
-    "fs": "^0.0.2:
   },
   "engines": {
     "node": "8.4.0"
