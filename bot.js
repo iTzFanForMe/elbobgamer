@@ -82,7 +82,7 @@ client.on('message', message => {
 
 
 
-  const moment = require('moment');
+  
     client.on('message', message => {
           if (message.content.startsWith("#id")) {
             if(!message.channel.guild) return message.reply('هذا الامر للسيرفرات فقط')
