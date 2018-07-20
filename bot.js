@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const moment = require('moment');
  const prefix = "!";
 client.on('ready', () => {
     console.log('I am ready!');
@@ -198,7 +197,6 @@ client.on('message', message => {
 
 
 
-const fs = require('fs');
 let profile = JSON.parse(fs.readFileSync("./profile.json", "utf8"))
 client.on("message", message => {
   if (message.author.bot) return;
