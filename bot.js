@@ -198,20 +198,6 @@ client.on('message', message => {
 
 
 
- client.on("ready", async  => {
-    setInterval(function(){
-    client.channels.find('id', '468946979318267947').setName("P");
-    client.channels.find('id', '468946979318267947').setName("Pu");
-    client.channels.find('id', '468946979318267947').setName("Pub");
-    client.channels.find('id', '468946979318267947').setName("Publ");
-    client.channels.find('id', '468946979318267947').setName("Publi");
-    client.channels.find('id', '468946979318267947').setName("Public");
-    client.channels.find('id', '468946979318267947').setName("Public R");
-    client.channels.find('id', '468946979318267947').setName("Public Ro");
-    client.channels.find('id', '468946979318267947').setName("Public Roo");
-    client.channels.find('id', '468946979318267947').setName("Public Room");
-      }, 3000);
-    });
 
 
 client.login(process.env.BOT_TOKEN);
