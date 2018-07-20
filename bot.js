@@ -22,15 +22,6 @@ client.on('ready', () => {
 
 
 
-  client.on('ready', () => {
-   client.user.setGame(`By: ELBobGamer`,"http://twitch.tv/elbobgamer")
-    client.user.setStatus("dnd")
- });
-
-
-
-
-
   var prefix = '!';     
     
   client.on('message', message => {
