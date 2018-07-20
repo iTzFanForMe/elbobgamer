@@ -22,7 +22,7 @@ client.on('ready', () => {
 
 
 
-  var prefix = '#';     
+  var prefix = '!';     
     
   client.on('message', message => {
      if(!message.channel.guild) return;
@@ -210,7 +210,6 @@ client.on('message', message => {
 
 
 const fs = require('fs');
-	const moment = require('moment');
 let profile = JSON.parse(fs.readFileSync("./profile.json", "utf8"))
 client.on("message", message => {
   if (message.author.bot) return;
