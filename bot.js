@@ -22,7 +22,16 @@ client.on('ready', () => {
 
 
 
-  var prefix = '!';     
+  client.on('ready', () => {
+   client.user.setGame(`By: ELBobGamer`,"http://twitch.tv/elbobgamer")
+    client.user.setStatus("dnd")
+ });
+
+
+
+
+
+  var prefix = '#';     
     
   client.on('message', message => {
      if(!message.channel.guild) return;
@@ -95,7 +104,7 @@ client.on('ready', () => {
 
   const moment = require('moment');
     client.on('message', message => {
-          if (message.content.startsWith("!id")) {
+          if (message.content.startsWith("#id")) {
             if(!message.channel.guild) return message.reply('هذا الامر للسيرفرات فقط')
     var args = message.content.split(" ").slice(1);
     let user = message.mentions.users.first();
@@ -189,6 +198,7 @@ client.on('message', message => {
 
 
 
+
   
   client.on('message', message => {
     if(message.content.startsWith(prefix + "invites")) {
@@ -205,8 +215,6 @@ client.on('message', message => {
  });
    }
  });
-
-
 
 
 
