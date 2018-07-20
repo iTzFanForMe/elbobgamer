@@ -13,7 +13,18 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {
+client.on('ready', () => {
+   client.user.setGame(`By: ELBobGamer`,"http://twitch.tv/elbobgamer")
+    client.user.setStatus("dnd")
+ });
+
+
+
+
+
+  var prefix = '#';     
+    
+  client.on('message', message => {
      if(!message.channel.guild) return;
   if(message.content.startsWith(prefix + 'clear')) {
   if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -82,7 +93,7 @@ client.on('message', message => {
 
 
 
-  
+  const moment = require('moment');
     client.on('message', message => {
           if (message.content.startsWith("#id")) {
             if(!message.channel.guild) return message.reply('هذا الامر للسيرفرات فقط')
@@ -197,6 +208,9 @@ client.on('message', message => {
 
 
 
+
+const fs = require('fs');
+	const moment = require('moment');
 let profile = JSON.parse(fs.readFileSync("./profile.json", "utf8"))
 client.on("message", message => {
   if (message.author.bot) return;
@@ -301,6 +315,7 @@ mentionned.send(` :credit_card: | Transfer Receipt \`\`\`You have received ${arg
 }
 
       });
+
 
 
 client.login(process.env.BOT_TOKEN);
