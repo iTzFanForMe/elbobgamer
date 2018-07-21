@@ -91,9 +91,9 @@ client.on('ready', () => {
 
 
 
-  const moment = require('moment');
+  
     client.on('message', message => {
-          if (message.content.startsWith("#id")) {
+          if (message.content.startsWith("!id")) {
             if(!message.channel.guild) return message.reply('هذا الامر للسيرفرات فقط')
     var args = message.content.split(" ").slice(1);
     let user = message.mentions.users.first();
