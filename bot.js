@@ -209,7 +209,7 @@ client.on('message', message => {
 
 
 
-const fs = require('fs');
+
 let profile = JSON.parse(fs.readFileSync("./profile.json", "utf8"))
 client.on("message", message => {
   if (message.author.bot) return;
