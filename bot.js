@@ -20,9 +20,7 @@ client.on('ready', () => {
 
 
 
-
-
-  var prefix = '#';     
+    
     
   client.on('message', message => {
      if(!message.channel.guild) return;
