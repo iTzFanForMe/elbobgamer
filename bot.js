@@ -13,10 +13,6 @@ client.on('message', message => {
 
 
 
-client.on('ready', () => {
-   client.user.setGame(`By: ELBobGamer`,"http://twitch.tv/elbobgamer")
-    client.user.setStatus("dnd")
- });
 
 
 
